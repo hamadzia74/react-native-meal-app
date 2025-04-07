@@ -7,19 +7,19 @@ export const FavoritesContext = createContext({
 });
 
 function FavoritesContextProvider({ children }) {
-  const [favoriteIds, setFavoriteIds] = useState([]);
+  const [favoriteMealIds, setFavoriteMealIds] = useState([]);
 
   const addFavorite = (id) => {
-    setFavoriteIds((prev) => [...prev, id]);
+    setFavoriteMealIds((prev) => [...prev, id]);
   };
 
   const removeFavorite = (id) => {
-    setFavoriteIds((prev) => prev.filter((favId) => favId !== id));
+    setFavoriteMealIds((prev) => prev.filter((favId) => favId !== id));
   };
 
   return (
     <FavoritesContext.Provider
-      value={{ ids: favoriteIds, addFavorite, removeFavorite }}
+      value={{ ids: favoriteMealIds, addFavorite, removeFavorite }}
     >
       {children}
     </FavoritesContext.Provider>
