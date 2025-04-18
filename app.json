@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "RNMealApp1",
-    "slug": "RNMealApp1",
+    "name": "RNMealApp",
+    "slug": "RNMealApp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
